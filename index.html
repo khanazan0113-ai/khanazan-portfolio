@@ -1,87 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khan Azan | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050608"><meta name="description" content="Khanazan — web developer and cybersecurity learner.">
+<title>KHANAZAN — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <canvas id="matrix"></canvas>
+<body class="loading">
+<div class="intro-screen" id="introScreen" aria-label="Khanazan portfolio loading">
+  <div class="intro-grid"></div>
+  <div class="intro-content">
+    <div class="intro-emblem"><span>K</span><i></i><i></i><i></i><i></i></div>
+    <div class="intro-wordmark">KHANAZAN<span>.</span></div>
+    <div class="intro-caption">CREATIVE DEVELOPER <b>/</b> 0113</div>
+    <div class="intro-loader"><span></span></div>
+    <div class="intro-status">INITIALIZING EXPERIENCE <b id="introPercent">00%</b></div>
+  </div>
+  <div class="intro-corner intro-left">PORTFOLIO SYSTEM<br>VERSION 01.13</div>
+  <div class="intro-corner intro-right">WELCOME<br>TO MY WORLD ↗</div>
+</div>
+<canvas id="particles"></canvas>
+<div class="grain"></div>
+<header class="topbar">
+  <a class="logo" href="#home"><i></i> khanazan <small>0113</small></a>
+  <button class="menu" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="nav"><a href="#home" class="current">HOME</a><a href="#about">ABOUT</a><a href="#projects">PROJECTS</a><a href="#journey">JOURNEY</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></nav>
+  <a class="top-contact" href="#contact">GET IN TOUCH <b>↗</b></a>
+</header>
 
-  <nav class="navbar">
-    <div class="logo">AZAN<span>.DEV</span></div>
-    <a href="#home">HOME</a>
-    <a href="#about">ABOUT</a>
-    <a href="#skills">SKILLS</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
+<main>
+<section class="hero wrap" id="home">
+  <div class="hero-copy appear">
+    <div class="eyebrow"><span></span> CREATIVE WEB DEVELOPMENT & CYBERSECURITY</div>
+    <h1>KHANAZAN<br><em>CREATES.</em></h1>
+    <p class="hero-desc">Web developer & technology enthusiast. I build digital experiences with clean code, thoughtful design, and a curiosity for how the web works.</p>
+    <div class="hero-buttons"><a class="button white" href="#projects">EXPLORE PROJECTS <b>↘</b></a><a class="button cyan-outline" href="#journey">VIEW MY JOURNEY</a><a class="button dark-outline" href="#contact">INITIALIZE CONTACT</a></div>
+    <div class="hero-bottom"><span>WEB DEVELOPER / FUTURE CYBERSECURITY PROFESSIONAL</span><span class="availability"><i></i> ALWAYS LEARNING</span></div>
+  </div>
+  <div class="hero-image appear"><div class="image-label"><span>PROFILE / 0113</span><span>01 — 04</span></div><img src="assets/profile.jpg" alt="Khanazan sitting in an autumn woodland"><div class="image-overlay"><span>KHANAZAN</span><small>BUILD • LEARN • REPEAT</small></div><div class="image-corner"></div></div>
+  <div class="hero-scroll"><span>↓</span> SCROLL DOWN TO EXPLORE</div>
+</section>
 
-  <main id="home">
-    <p class="tag">[ WELCOME TO MY DIGITAL WORLD ]</p>
-    <h1>Hi, I'm <span>Khan Azan</span></h1>
-    <h2>Web Developer</h2>
-    <p class="description">I build websites, explore technology, and learn how to make the digital world safer.</p>
-    <div class="buttons">
-      <a href="#about" class="btn">EXPLORE MORE</a>
-      <a href="#contact" class="btn outline">CONTACT ME</a>
+<section class="about wrap section" id="about">
+  <div class="section-head appear"><div class="eyebrow"><span></span> THE PHILOSOPHY & BACKGROUND</div><h2>ABOUT <b>KHANAZAN</b></h2></div>
+  <div class="about-grid">
+    <div class="about-photo appear"><img src="assets/profile.jpg" alt="Khanazan outdoors"><span class="photo-stamp">KHANAZAN<br>EST. 0113</span></div>
+    <div class="about-text appear"><blockquote>“Building with <i>curiosity</i>, learning with <b>purpose</b>, and creating one line of code at a time.”</blockquote>
+      <p>I'm Khanazan, a web developer who enjoys turning ideas into interactive websites. I’m interested in how design and technology come together to make useful, memorable digital experiences.</p>
+      <p>I'm also working toward a future in <strong>cybersecurity</strong>. My goal is to understand the web from the inside out and learn how to help make digital spaces safer through responsible, ethical practices.</p>
+      <div class="stats"><div><b>01</b><small>CREATIVE<br>THINKING</small></div><div><b>24/7</b><small>CURIOUS<br>MINDSET</small></div><div><b>∞</b><small>ROOM TO<br>LEARN</small></div></div>
     </div>
-  </main>
-
-  <section id="about">
-    <h2>ABOUT <span>ME</span></h2>
-    <p>I'm Khan Azan, a beginner web developer passionate about coding and cybersecurity.</p>
-  </section>
-
-  <section id="skills">
-    <h2>MY <span>SKILLS</span></h2>
-    <p>HTML • CSS • JavaScript • Cybersecurity Fundamentals</p>
-  </section>
-
-  <section id="contact">
-    <h2>CONTACT <span>ME</span></h2>
-    <p>More contact information coming soon.</p>
-  </section>
-
-  <footer>© 2026 Khan Azan | Built with curiosity.</footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
-<section id="projects">
-  <h2>MY <span>PROJECTS</span></h2>
-  <p class="project-intro">Some things I'm building and learning.</p>
-
-  <div class="project-grid">
-    <article class="project-card">
-      <p class="project-number">PROJECT_01</p>
-      <h3>Personal Portfolio</h3>
-      <p>A personal website built with HTML and CSS.</p>
-      <span class="project-tag">HTML / CSS</span>
-    </article>
-
-    <article class="project-card">
-      <p class="project-number">PROJECT_02</p>
-      <h3>Matrix Animation</h3>
-      <p>A digital rain animation created with JavaScript.</p>
-      <span class="project-tag">JAVASCRIPT</span>
-    </article>
-
-    <article class="project-card">
-      <p class="project-number">PROJECT_03</p>
-      <h3>Cybersecurity Lab</h3>
-      <p>A future learning project for safe security experiments.</p>
-      <span class="project-tag">LEARNING</span>
-    </article>
   </div>
 </section>
-<a href="#projects">PROJECTS</a>
 
-<canvas id="matrix"></canvas>
+<section class="projects wrap section" id="projects">
+  <div class="project-title-row appear"><div><div class="eyebrow"><span></span> PERSONAL BUILDS / LEARNING PROJECTS</div><h2>FEATURED<br>PROJECTS</h2><p class="sub">A selection of things I’ve built or am exploring. Each project is a new opportunity to learn and improve.</p></div><div class="project-filter"><button class="filter active" data-filter="all">ALL WORK (3)</button><button class="filter" data-filter="web">WEB / UI</button><button class="filter" data-filter="learn">LEARNING</button></div></div>
+  <div class="project-grid">
+    <article class="project-card appear" data-kind="web"><div class="project-art art-one"><div class="browser"><div class="browser-top"><i></i><i></i><i></i><span>khanazan.dev</span></div><div class="browser-body"><small>PERSONAL WEBSITE</small><b>Ideas into<br>digital reality.</b><span class="mock-line"></span><span class="mock-line short"></span><span class="mock-btn"></span></div></div><label>2026 <b>WEB / UI</b></label></div><div class="project-info"><div class="project-type">● FRONTEND DEVELOPMENT</div><h3>Personal Portfolio</h3><p>A responsive portfolio concept with a dark interface, motion details and a personal introduction.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
+    <article class="project-card appear" data-kind="web"><div class="project-art art-two"><div class="login-mock"><div class="login-mark">K.</div><b>Welcome back.</b><small>Sign in to continue</small><i></i><i></i><strong>CONTINUE →</strong></div><label>2026 <b>INTERFACE DESIGN</b></label></div><div class="project-info"><div class="project-type">● UI / INTERACTION</div><h3>Animated Login UI</h3><p>A login-page design experiment focused on clean forms, responsive layouts and subtle transitions.</p><div class="chips"><span>CSS Motion</span><span>Forms</span><span>JavaScript</span></div></div></article>
+    <article class="project-card appear" data-kind="learn"><div class="project-art art-three"><div class="terminal-art"><div>root@khanazan:~ <b>_</b></div><p>&gt; learning_path --start</p><p class="green">[+] Web fundamentals</p><p class="green">[+] Safe coding habits</p><p>[ ] Security concepts</p><p>[ ] Ethical lab practice</p></div><label>ONGOING <b>CYBERSECURITY</b></label></div><div class="project-info"><div class="project-type">● LEARNING / RESEARCH</div><h3>Security Learning Lab</h3><p>A personal roadmap for learning online safety, secure development and ethical cybersecurity fundamentals.</p><div class="chips"><span>Web Safety</span><span>Networking</span><span>Ethics</span></div></div></article>
+  </div>
+</section>
+
+<section class="journey wrap section" id="journey">
+  <div class="section-head appear"><div class="eyebrow"><span></span> EVOLUTION & TECHNICAL MILESTONES</div><h2>MY DEVELOPER <b>JOURNEY</b></h2><p class="sub">A work in progress — building a strong foundation, exploring new tools and moving toward a future in cybersecurity.</p></div>
+  <div class="journey-layout">
+    <div class="timeline appear">
+      <button class="milestone selected" data-stage="0"><small>STAGE 01</small><b>Web Foundations</b><span>HTML • CSS • JavaScript</span></button>
+      <button class="milestone" data-stage="1"><small>STAGE 02</small><b>Creative Interfaces</b><span>Responsive design & animation</span></button>
+      <button class="milestone" data-stage="2"><small>STAGE 03</small><b>Building Projects</b><span>Practice through real websites</span></button>
+      <button class="milestone" data-stage="3"><small>STAGE 04</small><b>Cybersecurity Path</b><span>Ethical and defensive learning</span></button>
+    </div>
+    <div class="dossier appear"><div class="dossier-top"><span>■ DOSSIER / <b id="stageNo">STAGE 01</b></span><small id="stageTag">FOUNDATION</small></div><h3 id="stageTitle">Web Development Foundations</h3><p id="stageDesc">Learning the building blocks of the web: structuring pages, styling interfaces and adding useful interactions with JavaScript.</p><div class="dossier-rule"></div><small>FOCUS AREAS</small><div class="focus-tags" id="focusTags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+  </div>
+</section>
+
+<section class="skills wrap section" id="skills">
+  <div class="section-head appear"><div class="eyebrow"><span></span> INTERACTIVE CONSTELLATION / CURRENT TOOLKIT</div><h2>TECHNOLOGY <b>LAB</b></h2><p class="sub">Tools and topics I use, explore or plan to learn. Tap a technology to see its category.</p></div>
+  <div class="skill-tabs appear"><button class="skill-tab active" data-group="all">ALL TECHNOLOGIES</button><button class="skill-tab" data-group="frontend">FRONTEND</button><button class="skill-tab" data-group="tools">TOOLS</button><button class="skill-tab" data-group="security">SECURITY LEARNING</button></div>
+  <div class="tech-field appear" id="techField">
+    <button class="tech" data-group="frontend" data-name="HTML5" style="--x:8%;--y:25%">5</button><button class="tech" data-group="frontend" data-name="CSS3" style="--x:25%;--y:18%">✳</button><button class="tech" data-group="frontend" data-name="JavaScript" style="--x:43%;--y:30%">JS</button><button class="tech" data-group="frontend" data-name="Responsive Design" style="--x:62%;--y:17%">▣</button><button class="tech" data-group="frontend" data-name="UI Design" style="--x:83%;--y:28%">◈</button><button class="tech" data-group="tools" data-name="VS Code" style="--x:15%;--y:68%">⌘</button><button class="tech" data-group="tools" data-name="Git & GitHub" style="--x:37%;--y:75%">⑂</button><button class="tech" data-group="tools" data-name="Netlify" style="--x:58%;--y:67%">N</button><button class="tech" data-group="security" data-name="Web Security Basics" style="--x:77%;--y:73%">◇</button><button class="tech" data-group="security" data-name="Ethical Cybersecurity" style="--x:93%;--y:55%">⌁</button>
+  </div><div class="tech-caption" id="techCaption">SELECT A SYMBOL TO INSPECT THE TECHNOLOGY</div>
+</section>
+
+<section class="contact wrap section" id="contact">
+  <div class="section-head appear"><div class="eyebrow"><span></span> INITIATE COLLABORATION</div><h2>GET IN <b>TOUCH</b></h2><p class="sub">Have a question, an idea or want to talk about web development? Find me on Instagram.</p></div>
+  <div class="contact-grid">
+    <div class="contact-card appear"><h3>Direct Channel</h3><p>Connect with me for project ideas, feedback or a friendly tech conversation.</p><a class="instagram" href="https://www.instagram.com/khanazan._/" target="_blank" rel="noopener noreferrer"><span>@khanazan._</span><b>OPEN INSTAGRAM ↗</b></a>
+    <a class="instagram email-link" href="mailto:khanazan0113@gmail.com"><span>khanazan0113@gmail.com</span><b>SEND EMAIL ↗</b></a><div class="contact-meta"><small>PRIMARY CHANNEL</small><strong>INSTAGRAM</strong></div><div class="contact-meta"><small>INTERESTS</small><strong>WEB DEVELOPMENT / CYBERSECURITY</strong></div></div>
+    <form class="message-card appear" id="messageForm"><div class="form-head"><span><i></i><i></i><i></i> CONSOLE // DISPATCH_MESSAGE</span><small>READY</small></div><label for="visitorName">YOUR NAME / IDENTIFIER *</label><input id="visitorName" required placeholder="e.g. Alex"><label for="visitorMessage">MESSAGE / INQUIRY *</label><textarea id="visitorMessage" required rows="5" placeholder="Write your message here..."></textarea><button class="send" type="submit">PREPARE MESSAGE ↗</button><p class="form-note">This opens Instagram in a new tab; the form does not store or send your information.</p></form>
+  </div>
+</section>
+</main>
+<footer class="footer wrap"><a class="logo" href="#home"><i></i> khanazan <small>0113</small></a><span>WEB DEVELOPER / CYBERSECURITY LEARNER</span><a href="#home">BACK TO TOP ↑</a></footer>
+<p style="width:86%;max-width:1100px;margin:0 auto;padding:0 0 28px;text-align:center;font:9px/1.7 var(--mono);letter-spacing:.4px;color:#92979f">If you need my help, please contact me at this number: <a href="tel:7889466018" style="color:var(--cyan)">7889466018</a>.</p>
 <script src="script.js"></script>
-AZAN<span>.DEV</span>
-<div class="logo">AZAN<span>.DEV</span></div>
-
-<div class="logo">KHAN <span>AZAN</span></div>
+</body></html>
